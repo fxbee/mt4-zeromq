@@ -1,0 +1,27 @@
+LIBRARY "zmq_bind"
+EXPORTS 
+_zmq_send_double_array
+_zmq_send_int_array
+_zmq_get_opt_more 
+
+_zmq_setsockopt
+_zmq_poll
+_zmq_new_poll
+
+_zmsg_new
+_zmq_msg_init_data
+_zmq_msg_data
+_zmq_msg_size
+_zmq_msg_close
+_zmq_init
+_zmq_term
+_zmq_socket
+_zmq_close
+_zmq_bind
+_zmq_connect
+_zmq_send
+_zmq_recv
+_zmq_strerror
+_zmq_errno
+_zmq_version
+ 

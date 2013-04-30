@@ -1,0 +1,31 @@
+
+PRECOMPILED: precompile libraries for zmq version 2.0.10 and for the wrappers are available in the libs folder for x86 32 bit architecture on windows and linux. I am not sure if the linux wrapper can be used with any wine version, hmm... 
+
+LINUX users
+===========
+
+download/install zeromq 2.0.10
+download wine-devel (in ubuntu thats what it is called) 
+type make in wrap/linux directory 
+
+Then place zmq_bind.dll.so in metatrader library folder (experts/libary). Rename this to zmq_bind.dll!
+
+WINDOWS users
+=============
+
+download cmake, place it into your path (pick that option in installer)
+download/install/compile zeromq. place dll called libzmq.dll somewhere in path, like C:\WIndows\system32. Move zeromq.lib or such over to wrap/windows. type cmake in wrap/windows (note you need to be in microsoft
+visual studio command prompt which has all environment variables properly set). Type nmake. place zmq_bind.dll into experts/library folder. 
+
+ALL USERS
+=========
+
+Place all files in include directory in metatrader's include directory
+
+A simple example is in examples/script
+
+
+Credits
+=======
+
+All credits to http://codebase.mql4.com/7147
